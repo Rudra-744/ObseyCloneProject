@@ -59,3 +59,10 @@ html,body{
         font-weight: 500;
     }
 }
+
+.cursor{
+    mix-blend-mode: difference;
+    z-index: 998;
+    transform: translate(-50%,-50%);
+}
+
