@@ -1,18 +1,3 @@
-function setupHoverEffects() {
-  document.querySelectorAll('#hero3 h1').forEach(function(elem) {
-    elem.addEventListener('mouseenter', function() {
-      this.style.webkitTextStroke = '2px #fff';
-      this.style.color = 'transparent';
-      this.style.fontWeight = '500';
-    });
-    elem.addEventListener('mouseleave', function() {
-      this.style.webkitTextStroke = 'none';
-      this.style.color = '#fff';
-      this.style.fontWeight = '';
-    });
-  });
-}
-
 function loadingAnime(){
   let tl = gsap.timeline();
 
@@ -50,7 +35,7 @@ function startCounter() {
 tl.to(".loader", {
   opacity: 0,
   duration: 0.3,
-  delay: 0,
+  delay: 3,
 });
 
 tl.from('.page1', {
@@ -63,23 +48,20 @@ tl.from('.page1', {
       tl.to('.loader', {
           display: "none"
       });
-      setupHoverEffects();
     }
 });
 tl.from('nav',{
   opacity: 0,
-  duration: 0.8,
+  duration: 0.7,
 })
 tl.from('#hero1 h1, #hero2 h1, #hero3 h1, #hero4 h1', {
-    y: 120,
+    y: 150,
     opacity: 0,
     duration: 0.5,
     stagger: 0.2,
     ease: "power3.out"
 });
 }
-
-
 
 function cursorAnime(){
   document.addEventListener('mousemove',function(dets){
