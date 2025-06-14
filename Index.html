@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Obys Agency</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
   <link rel="shortcut icon" href="Images/favicon-32x32.png" type="image/x-icon" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.css" />
   <link rel="stylesheet" href="style.css" />
@@ -12,7 +13,7 @@
 
 <body class="overflow-x-hidden">
   <div class="cursor h-[2.4vw] w-[2.4vw] border-[1px] border-white rounded-full fixed"></div>
-  <div class="loader w-full h-full z-[9999] fixed bg-[#000000] py-[25vh] px-[8vw]">
+     <div class="loader w-full h-full z-[9999] fixed bg-[#000000] py-[25vh] px-[8vw]"> 
         <div class="line leading-[7vw] overflow-hidden flex gap-[4vw] items-center justify-start">
             <div class="number overflow-hidden flex items-center  mb-[2vw] justify-center gap-[1.2vw]">
                 <h5 class="text-[3.5vw] font-thin font-silk  w-[5vw] text-right">00</h5>
@@ -27,9 +28,9 @@
             <h1 class="text-[7vw] uppercase font-semibold font-plain ">is loading right</h1>
             <h2 class="Now text-[6vw]  font-plain uppercase font-semibold">Now</h2>
         </div>
-    </div>  
-  <main class="relative bg-[#151515]">
-    <div class="page1 h-screen w-full bg-[#151515]">
+    </div>   
+  <main class="relative bg-[#151515] overflow-hidden" data-scroll-container>
+    <div class="page1 h-[94vh]  bg-[#151515]  w-full " data-scroll>
       <nav class="flex items-center justify-between px-[8.5vw] py-[3vw]">
         <svg class="brand__svg" width="71" height="27" viewBox="0 0 71 27">
           <path
@@ -69,11 +70,14 @@
           <h4>Contacts</h4>
         </div>
       </nav>
-      <div id="hero1" class="hero relative mt-[7vw] overflow-hidden h-fit w-[70%] ml-[28%]">
-        <h1 class="text-[7.5vw] uppercase leading-none font-semibold tracking-wide">
-          We Design
-        </h1>
-      </div>
+      <div class="relative mt-[4.5vw] w-[70%] ml-[28%]">
+          <span class="first1 absolute font-[SilkSerif] font-[100] text-[3.1vw] text-white -left-[11vw] top-[1.8vw] z-10">01</span>      
+  <div id="hero1" class="hero items-center flex  relative overflow-hidden h-fit w-full">
+    <h1 class="text-[7.5vw] relative uppercase leading-none font-semibold tracking-wide">
+      We Design
+    </h1>
+  </div>
+</div>
       <div id="hero2" class="hero relative w-[70%] overflow-hidden h-fit ml-[28%]">
         <h1 class="text-[7.5vw] uppercase leading-none font-semibold tracking-wide">
           Unique
@@ -82,7 +86,7 @@
       <div id="hero3"
         class="hero relative w-[70%] overflow-hidden h-fit ml-[28%] flex items-center justify-start gap-[1vw]">
         <h1 class="text-[7.5vw] uppercase leading-none font-semibold tracking-tigher">
-          Web 
+          Web
         </h1>
         <h1 class="text-[7.5vw] uppercase leading-none font-semibold tracking-tigher">
           /
@@ -97,7 +101,7 @@
         </h1>
       </div>
     </div>
-    <div class="page2 bg-[#151515] h-screen w-full pt-[20vh] relative">
+    <div class="page2 bg-[#151515] h-screen w-full relative py-[5vh]  mt-[6vh]" data-scroll data-scroll-speed="-1.4" >
       <div class="video-con h-[65vh] w-[70vw] relative left-[27%] bg-[Images/vidImage.jpg]">
         <div
           class="video-cursor flex items-center justify-center -top-[15%] left-[75%] bg-[#ffa53d] w-[10vw] h-[10vw] rounded-full absolute z-[999]">
@@ -112,10 +116,10 @@
           src="VIdeo/Obys-Showreel-2024.mp4"></video>
       </div>
     </div>
-    <div class="page3 relative min-h-screen w-full bg-black"></div>
-    <div class="page4 min-h-screen relative w-full py-[7vh]">
+    <div class="page3 relative min-h-screen w-full bg-black" data-scroll data-scroll-speed="-1.5"></div>
+    <div class="page4 min-h-screen relative w-full py-[7vh]" data-scroll>
       <div class="page4content w-[72%]  ml-[28%] relative">
-        <h1 class="uppercase text-left text-[7vw] font-plain">About obys</h1>
+        <h1 class="uppercase relative text-left text-[7vw] font-plain before:content-['03'] before:absolute before:font-[SilkSerif] before:font-[100] before:text-[3.1vw] before:-left-[11vw] before:top-[1.8vw]">About obys</h1>
         <div class="underlineee w-[90%] h-[0.10vw] bg-[#fff] my-[5vw]"></div>
         <p class="text-[2.2vw] w-[30vw] text-left mb-[4vw] tracking-normal font-medium leading-none font-plain">
           Our agency is about people who love creating, designing and
@@ -129,7 +133,7 @@
             <p>
               We are happy to present our new website and updated version of
               Obys agency. As before we are open for new projects worldwide!
-            <br><br>
+              <br><br>
               Would you like to have award winning site or unique branding
               style, please say hi to our manager —info@obys.agency. And we
               will help you with the pleasure.
@@ -137,35 +141,100 @@
           </div>
         </div>
         <div class="page4blue px-[2.5vw] py-[4.5vw] w-[32.5vw] relative -mt-[29.8vh] ml-[23.8vw] bg-[#3f7df4] ">
-            <div class="bluelem mb-[2vw] border-b pb-[1.6vw] flex items-start justify-between">
-              <h4 class="text-[1.8vw]">Awwwards x16</h4>
-              <p class="w-[40%] text-sm font-semibold">SOTM, SOTD and Honrable Mentions</p>
-            </div>
-            <div class="bluelem mb-[2vw] border-b pb-[1.6vw] flex items-center justify-between">
-              <h4 class="text-[1.8vw]">Red Dot Award x1</h4>
-              <p class="w-[40%] text-sm font-semibold">Best of the Best</p>
-            </div>
-            <div class="bluelem mb-[2vw] border-b pb-[1.6vw] flex items-center justify-between">
-              <h4 class="text-[1.8vw]">FWA x11</h4>
-              <p class="w-[40%] text-sm font-semibold">FWA of The Day</p>
-            </div>
-            <div class="bluelem mb-[2vw] border-b pb-[1.6vw] flex items-center justify-between">
-              <h4 class="text-[1.8vw]">CSSDA x23</h4>
-              <p class="w-[40%] text-sm font-semibold">WOTM, WOTD and UI, UX, Innovation</p>
-            </div>
-            <div class="bluelem mb-[2vw] border-b pb-[1.6vw] flex items-center justify-between ">
-              <h4 class="text-[1.8vw]">Behance x25</h4>
-              <p class="w-[40%] text-sm font-semibold">Interaction, Graphic Design</p>
-            </div>
+          <div class="bluelem mb-[2vw] border-b pb-[1.6vw] flex items-start justify-between">
+            <h4 class="text-[1.8vw]">Awwwards x16</h4>
+            <p class="w-[40%] text-sm font-semibold">SOTM, SOTD and Honrable Mentions</p>
+          </div>
+          <div class="bluelem mb-[2vw] border-b pb-[1.6vw] flex items-center justify-between">
+            <h4 class="text-[1.8vw]">Red Dot Award x1</h4>
+            <p class="w-[40%] text-sm font-semibold">Best of the Best</p>
+          </div>
+          <div class="bluelem mb-[2vw] border-b pb-[1.6vw] flex items-center justify-between">
+            <h4 class="text-[1.8vw]">FWA x11</h4>
+            <p class="w-[40%] text-sm font-semibold">FWA of The Day</p>
+          </div>
+          <div class="bluelem mb-[2vw] border-b pb-[1.6vw] flex items-center justify-between">
+            <h4 class="text-[1.8vw]">CSSDA x23</h4>
+            <p class="w-[40%] text-sm font-semibold">WOTM, WOTD and UI, UX, Innovation</p>
+          </div>
+          <div class="bluelem mb-[2vw] border-b pb-[1.6vw] flex items-center justify-between ">
+            <h4 class="text-[1.8vw]">Behance x25</h4>
+            <p class="w-[40%] text-sm font-semibold">Interaction, Graphic Design</p>
+          </div>
         </div>
-        <div class="underlineee w-[90%] h-[0.10vw] bg-[#fff] my-[5vw]"></div>
+        <div class="underlineee w-[90%] h-[0.10vw] bg-[#fff] my-[5vw] "></div>
+        <div class="-mt-[3vw]">We Work with</div>
       </div>
     </div>
-    <div class="page5 min-h-screen w-full">
-      
+    <div class="page5 min-h-screen w-full"  data-scroll>
+      <div class="elem">
+        <div class="marquee">
+          <h1><span class="italic font-silk text-transparent">Sport</span> - Technology - <span
+              class="italic font-silk text-transparent">Fashion</span> - Technology -</h1>
+          <h1><span class="italic font-silk text-transparent">Sport</span> - Technology - <span
+              class="italic font-silk text-transparent">Fashion</span> - Technology -</h1>
+          <h1><span class="italic font-silk text-transparent">Sport</span> - Technology - <span
+              class="italic font-silk text-transparent">Fashion</span> - Technology -</h1>
+          <h1><span class="italic font-silk text-transparent">Sport</span> - Technology - <span
+              class="italic font-silk text-transparent">Fashion</span> - Technology -</h1>
+        </div>
+      </div>
+      <div class="elem2">
+        <div class="marquee2">
+          <h1><span class="italic font-silk text-transparent">Beauty</span> - Real Estate - Architecture -</h1>
+          <h1><span class="italic font-silk text-transparent">Beauty</span> - Real Estate - Architecture -</h1>
+          <h1><span class="italic font-silk text-transparent">Beauty</span> - Real Estate - Architecture -</h1>
+          <h1><span class="italic font-silk text-transparent">Beauty</span> - Real Estate - Architecture -</h1>
+        </div>
+      </div>
+      <div class="elem">
+        <div class="marquee">
+          <h1><span class="italic font-silk text-transparent">Science</span> - Travel - Partners -</h1>
+          <h1><span class="italic font-silk text-transparent">Science</span> - Travel - Partners -</h1>
+          <h1><span class="italic font-silk text-transparent">Science</span> - Travel - Partners -</h1>
+          <h1><span class="italic font-silk text-transparent">Science</span> - Travel - Partners -</h1>
+        </div>
+      </div>
+      <div class="elem2">
+        <div class="marquee2">
+          <h1><span class="italic font-silk text-transparent">Music</span> - Automotive - Hotels -</h1>
+          <h1><span class="italic font-silk text-transparent">Music</span> - Automotive - Hotels -</h1>
+          <h1><span class="italic font-silk text-transparent">Music</span> - Automotive - Hotels -</h1>
+          <h1><span class="italic font-silk text-transparent">Music</span> - Automotive - Hotels -</h1>
+        </div>
+      </div>
     </div>
-  </main>
+    <div class="footer h-screen relative w-full pl-[28vw]" data-scroll>
+        <h1 class="uppercase before:content-['04'] before:absolute before:font-[SilkSerif] before:font-[100] before:text-[3.1vw] before:-left-[11vw] before:top-[1.8vw] relative text-left text-[7.2vw] font-plain font-semibold">Let's Crete</h1>
+        <div class="underlineee w-[90%] h-[0.10vw] bg-[#fff] my-[3.5vw]"></div>
+      <div class="footerCont pr-[15vw] py-[4vw] flex items-start justify-between">
+        <div class="box">
+          <h6 class="text-[1.1vw] font-semibold">Socials</h6>
+          <div class="links flex leading-tight flex-col mt-[2vw]">
+            <a class="text-[2vw]" href="">Dribbble</a>
+            <a class="text-[2vw]" href="">Instagram</a>
+            <a class="text-[2vw]" href="">Facebook</a>
+            <a class="text-[2vw]" href="">Twitter</a>
+            <a class="text-[2vw]" href="">Youtube</a>
+          </div>
+        </div>
+        <div class="box ">
+          <h6 class="text-[1.1vw] font-semibold">Address</h6>
+          <p class="text-[1.6vw] my-[1.8vw] w-[17vw] leading-none">Originally from Kharkiv,
+            working globally</p>
+          </div>
+          <div class="box">
+            <h6 class="text-[1.1vw] mb-[1.2vw] font-semibold">Say Hi!</h6>
+            <a  class="underline text-[2vw]">info@obys.agency</a>
+          </div>  
+        </div>
+        <div class="underlineee w-[90%] h-[0.10vw] bg-[#fff] my-[2.5vw]"></div>
+        <h3 class="font-[500] font-plain">Obys Agency©2025</h3>
+  </div>
+    </main>
+    
 
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
     integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -175,7 +244,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
-  <script type="text/javascript" src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
+<script  type="text/javascript"  src="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
   <script src="script.js"></script>
 </body>

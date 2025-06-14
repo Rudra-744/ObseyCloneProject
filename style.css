@@ -64,6 +64,8 @@ html,body{
     mix-blend-mode: difference;
     z-index: 998;
     transform: translate(-50%,-50%);
+    pointer-events: none;
+    will-change: transform;
 }
 
 
@@ -87,4 +89,93 @@ html,body{
     color: transparent;
     font-weight: 500;
     border-bottom: 0.3vw solid transparent;
+}
+
+.elem{
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    line-height: 1.5
+}
+.elem .marquee{
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 40s linear infinite;
+}
+.elem h1{
+    -webkit-text-stroke: 1px  #fff;
+    font-size: 7vw;
+    font-weight: 400 ;
+    text-transform: uppercase;
+    color: transparent;
+    display: inline-block; 
+    margin-left: 1vw;
+    animation: none;
+    
+}
+
+
+@keyframes marquee {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
+
+
+
+
+.elem2{
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    line-height: 1.1
+}
+.elem2 .marquee2{
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee2 40s linear infinite;
+}
+.elem2 h1{
+    -webkit-text-stroke: 1px  #fff;
+    font-size: 7vw;
+    font-weight: 400 ;
+    text-transform: uppercase;
+    color: transparent;
+    display: inline-block; 
+    margin-left: 1vw;
+    animation: none;
+  
+}
+
+
+@keyframes marquee2 {
+    100%{
+        transform: translateX(0);
+    }
+    0%{
+        transform: translateX(-50%);
+    }
+}
+html.has-scroll-smooth {
+  overflow: hidden;
+}
+
+html.has-scroll-dragging {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.has-scroll-smooth body {
+  overflow: hidden;
+}
+
+.has-scroll-smooth [data-scroll-container] {
+  min-height: 100vh;
 }
