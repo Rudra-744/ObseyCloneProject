@@ -49,10 +49,15 @@ function loadingAnime() {
     delay: 0.5,
   });
 
-  tl.from(".number", {
-    opacity: 0,
-    onComplete: startCounter,
-  });
+ tl.from(".number", {
+  opacity: 0,
+  duration: 0.5,
+  onComplete: () => {
+    // Delay counter slightly to ensure h5 is painted
+    setTimeout(startCounter, 50);
+  }
+});
+
 
   tl.from(".Now", {
     opacity: 0,
@@ -60,22 +65,25 @@ function loadingAnime() {
   });
 
   function startCounter() {
-    let h5 = document.querySelector(".h5");
-    let count = 0;
-    let interval = setInterval(function () {
-      if (count < 100) {
-        h5.textContent = count++;
-      } else {
-        h5.textContent = count;
-        clearInterval(interval);
-      }
-    }, 33);
-  }
+  const h5 = document.querySelector(".h5");
+  let count = 0;
+
+  const interval = setInterval(() => {
+    // Format number as two digits using padStart
+    h5.textContent = String(count).padStart(2, '0');
+
+    if (count >= 100) {
+      clearInterval(interval);
+    }
+
+    count++;
+  }, 30);
+}
 
   tl.to(".loader", {
     opacity: 0,
     duration: 0.3,
-    delay: 4,
+    delay: 2.9,
   });
 
   tl.from(".page1", {
@@ -116,7 +124,7 @@ function cursorAnime() {
     });
   });
 
-  Shery.makeMagnet(".nav-part2 h4");
+  Shery.makeMagnet(".nav-part2 h4,.menu");
 
   let videocon = document.querySelector('.video-con');
   let videocursor = document.querySelector('.video-cursor');
@@ -284,6 +292,15 @@ function hoverAnime() {
 
   texth1.addEventListener('mouseenter', animateIn);
   texth1.addEventListener('mouseleave', animateOut);
+
+  let orangecircle= document.querySelector(".orangecrc");
+  orangecircle.addEventListener('mouseenter',function(){
+    orangecircle.style.scale = '0.9';
+  })
+  orangecircle.addEventListener('mouseleave',function(){
+    orangecircle.style.scale = '1';
+  })
+  
 }
 
 function flaganimation() {
