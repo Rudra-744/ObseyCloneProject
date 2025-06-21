@@ -5,246 +5,558 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Obys Agency</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css" />
   <link rel="shortcut icon" href="Images/favicon-32x32.png" type="image/x-icon" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.css" />
+  <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" /> <!-- Recommended -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body class="overflow-x-hidden">
   <div class="cursor h-[2.4vw] w-[2.4vw] border-[1px] border-white rounded-full fixed"></div>
-     <div class="loader w-full h-full z-[9999] fixed bg-[#000000] py-[25vh] px-[8vw]"> 
-        <div class="line leading-[7vw] overflow-hidden flex gap-[4vw] items-center justify-start">
-            <div class="number overflow-hidden flex items-center  mb-[2vw] justify-center gap-[1.2vw]">
-                <h5 class="text-[3.5vw] font-thin font-silk  w-[5vw] text-right">00</h5>
-                <h6 class="text-[3.5vw] font-thin font-silk">- 100</h6>
-            </div>
-            <h1 class="text-[7vw] uppercase font-semibold font-plain">Your</h1>
+  <div class="loader w-full h-full z-[9999] fixed bg-[#000000] py-[25vh] px-[8vw]">
+    <div class="line leading-[7vw] overflow-hidden flex gap-[4vw] items-center justify-start">
+      <div class="number overflow-hidden flex items-center mb-[2vw] justify-center gap-[1.2vw]">
+        <h5 class="h5 text-[3.5vw] font-thin font-silk w-[5vw] text-right">
+          00
+        </h5>
+        <h6 class="text-[3.5vw] font-thin font-silk">- 100</h6>
+      </div>
+      <h1 class="text-[7vw] uppercase font-semibold font-plain">Your</h1>
+    </div>
+    <div class="line leading-[7vw] overflow-hidden flex items-center justify-start">
+      <h1 class="text-[7vw] uppercase font-semibold font-plain">
+        Web Experiences
+      </h1>
+    </div>
+    <div class="line leading-[7vw] overflow-hidden flex items-center justify-start gap-5">
+      <h1 class="text-[7vw] uppercase font-semibold font-plain">
+        is loading right
+      </h1>
+      <h2 class="Now text-[6vw] font-plain uppercase font-semibold">Now</h2>
+    </div>
+  </div>
+  <main class="relative bg-[#151515]" data-scroll-container>
+    <div class="page1 h-[94vh] max-sm:h-[52vh] bg-[#151515] w-full " data-scroll>
+      <nav class="flex max-sm:flex-row-reverse items-center justify-between px-[6vw] py-[3vw]">
+        <div class="flex items-center justify-center gap-[2vw]">
+          <svg class="menu-opener__square max-lg:hidden" width="12" height="12" viewBox="0 0 12 12" fill="none">
+            <rect y="10" width="2" height="2" fill="currentColor"></rect>
+            <rect y="5" width="2" height="2" fill="currentColor"></rect>
+            <rect width="2" height="2" fill="currentColor"></rect>
+            <rect x="5" y="10" width="2" height="2" fill="currentColor"></rect>
+            <rect x="5" y="5" width="2" height="2" fill="currentColor"></rect>
+            <rect x="5" width="2" height="2" fill="currentColor"></rect>
+            <rect x="10" y="10" width="2" height="2" fill="currentColor"></rect>
+            <rect x="10" y="5" width="2" height="2" fill="currentColor"></rect>
+            <rect x="10" width="2" height="2" fill="currentColor"></rect>
+          </svg>
+          <svg class="brand__svg" width="71" height="27" viewBox="0 0 71 27">
+            <path
+              d="M40.7622 24.5917C40.7622 23.6724 41.4511 22.9829 42.3697 22.9829C43.2883 22.9829 43.9773 23.6724 43.9773 24.5917C43.9773 25.511 43.2883 26.2005 42.3697 26.2005C41.566 26.2005 40.7622 25.3961 40.7622 24.5917Z"
+              fill="currentColor"></path>
+            <path
+              d="M65.7937 8.96329C65.7937 8.04398 66.4826 7.35449 67.4012 7.35449C68.3198 7.35449 69.0087 8.04398 69.0087 8.96329C69.0087 9.88261 68.3198 10.5721 67.4012 10.5721C66.4826 10.5721 65.7937 9.88261 65.7937 8.96329Z"
+              fill="currentColor"></path>
+            <path
+              d="M59.019 18.3861C59.019 17.4668 59.708 16.7773 60.6266 16.7773C61.5451 16.7773 62.2341 17.4668 62.2341 18.3861C62.2341 19.3055 61.5451 19.9949 60.6266 19.9949C59.8228 19.9949 59.019 19.3055 59.019 18.3861Z"
+              fill="currentColor"></path>
+            <path
+              d="M41.3365 9.88276C40.5327 8.27396 39.6142 7.8143 39.04 7.58447H46.3887C45.9294 7.8143 45.0108 8.04413 45.0108 8.96344C45.0108 9.19327 45.1257 9.65293 45.3553 10.1126L48.3407 16.6627L46.5035 20.225L41.3365 9.88276Z"
+              fill="currentColor"></path>
+            <path
+              d="M51.8998 9.30819C51.8998 8.04413 50.9812 7.69939 50.2922 7.58447H54.6555C53.8517 7.8143 52.8183 8.27396 51.7849 10.1126C51.8998 9.88276 51.8998 9.65293 51.8998 9.30819Z"
+              fill="currentColor"></path>
+            <path
+              d="M66.7122 17.9266C66.7122 16.2029 65.2195 15.6283 63.0378 14.5941C60.8562 13.5599 59.019 12.7555 59.019 10.8019C59.019 8.73348 60.971 7.12468 64.1861 7.00977C63.1527 7.23959 62.3489 8.15891 62.3489 9.42296C62.3489 10.9168 63.612 11.4914 65.9084 12.5256C68.2049 13.5599 70.2717 14.4792 70.2717 16.6626C70.2717 19.1907 67.4011 20.3398 64.6454 20.4547C65.9084 20.2249 66.7122 19.1907 66.7122 17.9266Z"
+              fill="currentColor"></path>
+            <path
+              d="M21.0129 2.64303C21.0129 1.6088 20.3239 0.919313 19.2905 0.689485L24.4576 0V20.3398C24.4576 20.3398 22.6204 20.4547 20.8981 21.8337V2.64303H21.0129Z"
+              fill="currentColor"></path>
+            <path
+              d="M34.6764 14.0195C34.6764 10.4572 31.691 7.58432 27.9019 7.35449C30.1983 7.69923 30.8873 11.4914 30.8873 14.0195C30.8873 16.5476 30.1983 20.2249 27.9019 20.6845C31.8058 20.4547 34.6764 17.5819 34.6764 14.0195Z"
+              fill="currentColor"></path>
+            <path
+              d="M14.9269 14.0195C14.9269 10.4572 11.9415 7.58432 8.15234 7.35449C10.4488 7.69923 11.1377 11.4914 11.1377 14.0195C11.1377 16.5476 10.4488 20.2249 8.15234 20.6845C11.9415 20.4547 14.9269 17.5819 14.9269 14.0195Z"
+              fill="currentColor"></path>
+            <path
+              d="M0 14.0195C0 10.4572 2.9854 7.58432 6.77456 7.35449C4.4781 7.69923 3.78916 11.4914 3.78916 14.0195C3.78916 16.5476 4.4781 20.2249 6.77456 20.6845C2.9854 20.4547 0 17.5819 0 14.0195Z"
+              fill="currentColor"></path>
+          </svg>
         </div>
-        <div class="line leading-[7vw] overflow-hidden flex items-center justify-start">
-            <h1 class="text-[7vw] uppercase font-semibold font-plain ">Web Experiences</h1>
-        </div>
-        <div class="line leading-[7vw] overflow-hidden flex items-center justify-start gap-5">
-            <h1 class="text-[7vw] uppercase font-semibold font-plain ">is loading right</h1>
-            <h2 class="Now text-[6vw]  font-plain uppercase font-semibold">Now</h2>
-        </div>
-    </div>   
-  <main class="relative bg-[#151515] overflow-hidden" data-scroll-container>
-    <div class="page1 h-[94vh]  bg-[#151515]  w-full " data-scroll>
-      <nav class="flex items-center justify-between px-[8.5vw] py-[3vw]">
-        <svg class="brand__svg" width="71" height="27" viewBox="0 0 71 27">
-          <path
-            d="M40.7622 24.5917C40.7622 23.6724 41.4511 22.9829 42.3697 22.9829C43.2883 22.9829 43.9773 23.6724 43.9773 24.5917C43.9773 25.511 43.2883 26.2005 42.3697 26.2005C41.566 26.2005 40.7622 25.3961 40.7622 24.5917Z"
-            fill="currentColor"></path>
-          <path
-            d="M65.7937 8.96329C65.7937 8.04398 66.4826 7.35449 67.4012 7.35449C68.3198 7.35449 69.0087 8.04398 69.0087 8.96329C69.0087 9.88261 68.3198 10.5721 67.4012 10.5721C66.4826 10.5721 65.7937 9.88261 65.7937 8.96329Z"
-            fill="currentColor"></path>
-          <path
-            d="M59.019 18.3861C59.019 17.4668 59.708 16.7773 60.6266 16.7773C61.5451 16.7773 62.2341 17.4668 62.2341 18.3861C62.2341 19.3055 61.5451 19.9949 60.6266 19.9949C59.8228 19.9949 59.019 19.3055 59.019 18.3861Z"
-            fill="currentColor"></path>
-          <path
-            d="M41.3365 9.88276C40.5327 8.27396 39.6142 7.8143 39.04 7.58447H46.3887C45.9294 7.8143 45.0108 8.04413 45.0108 8.96344C45.0108 9.19327 45.1257 9.65293 45.3553 10.1126L48.3407 16.6627L46.5035 20.225L41.3365 9.88276Z"
-            fill="currentColor"></path>
-          <path
-            d="M51.8998 9.30819C51.8998 8.04413 50.9812 7.69939 50.2922 7.58447H54.6555C53.8517 7.8143 52.8183 8.27396 51.7849 10.1126C51.8998 9.88276 51.8998 9.65293 51.8998 9.30819Z"
-            fill="currentColor"></path>
-          <path
-            d="M66.7122 17.9266C66.7122 16.2029 65.2195 15.6283 63.0378 14.5941C60.8562 13.5599 59.019 12.7555 59.019 10.8019C59.019 8.73348 60.971 7.12468 64.1861 7.00977C63.1527 7.23959 62.3489 8.15891 62.3489 9.42296C62.3489 10.9168 63.612 11.4914 65.9084 12.5256C68.2049 13.5599 70.2717 14.4792 70.2717 16.6626C70.2717 19.1907 67.4011 20.3398 64.6454 20.4547C65.9084 20.2249 66.7122 19.1907 66.7122 17.9266Z"
-            fill="currentColor"></path>
-          <path
-            d="M21.0129 2.64303C21.0129 1.6088 20.3239 0.919313 19.2905 0.689485L24.4576 0V20.3398C24.4576 20.3398 22.6204 20.4547 20.8981 21.8337V2.64303H21.0129Z"
-            fill="currentColor"></path>
-          <path
-            d="M34.6764 14.0195C34.6764 10.4572 31.691 7.58432 27.9019 7.35449C30.1983 7.69923 30.8873 11.4914 30.8873 14.0195C30.8873 16.5476 30.1983 20.2249 27.9019 20.6845C31.8058 20.4547 34.6764 17.5819 34.6764 14.0195Z"
-            fill="currentColor"></path>
-          <path
-            d="M14.9269 14.0195C14.9269 10.4572 11.9415 7.58432 8.15234 7.35449C10.4488 7.69923 11.1377 11.4914 11.1377 14.0195C11.1377 16.5476 10.4488 20.2249 8.15234 20.6845C11.9415 20.4547 14.9269 17.5819 14.9269 14.0195Z"
-            fill="currentColor"></path>
-          <path
-            d="M0 14.0195C0 10.4572 2.9854 7.58432 6.77456 7.35449C4.4781 7.69923 3.78916 11.4914 3.78916 14.0195C3.78916 16.5476 4.4781 20.2249 6.77456 20.6845C2.9854 20.4547 0 17.5819 0 14.0195Z"
-            fill="currentColor"></path>
-        </svg>
-        <div class="nav-part2 flex items-center justify-center gap-[2vw] font-plain">
+        <div class="nav-part2 flex items-center justify-center gap-[3vw] max-sm:hidden font-plain">
           <h4>Works</h4>
           <h4>About</h4>
           <h4>Contacts</h4>
         </div>
+        <svg class="menu-opener__square lg:hidden" width="12" height="12" viewBox="0 0 12 12" fill="none">
+          <rect y="10" width="2" height="2" fill="currentColor"></rect>
+          <rect y="5" width="2" height="2" fill="currentColor"></rect>
+          <rect width="2" height="2" fill="currentColor"></rect>
+          <rect x="5" y="10" width="2" height="2" fill="currentColor"></rect>
+          <rect x="5" y="5" width="2" height="2" fill="currentColor"></rect>
+          <rect x="5" width="2" height="2" fill="currentColor"></rect>
+          <rect x="10" y="10" width="2" height="2" fill="currentColor"></rect>
+          <rect x="10" y="5" width="2" height="2" fill="currentColor"></rect>
+          <rect x="10" width="2" height="2" fill="currentColor"></rect>
+        </svg>
       </nav>
-      <div class="relative mt-[4.5vw] w-[70%] ml-[28%]">
-          <span class="first1 absolute font-[SilkSerif] font-[100] text-[3.1vw] text-white -left-[11vw] top-[1.8vw] z-10">01</span>      
-  <div id="hero1" class="hero items-center flex  relative overflow-hidden h-fit w-full">
-    <h1 class="text-[7.5vw] relative uppercase leading-none font-semibold tracking-wide">
-      We Design
-    </h1>
-  </div>
-</div>
-      <div id="hero2" class="hero relative w-[70%] overflow-hidden h-fit ml-[28%]">
-        <h1 class="text-[7.5vw] uppercase leading-none font-semibold tracking-wide">
+      <div class="relative max-sm:mt-[30vw] max-sm:ml-[5vw] mt-[4.5vw] w-[70%] ml-[28%]">
+        <span
+          class="first1  max-sm:left-0 max-sm:-top-[6vw] max-sm:text-[4vw]  absolute font-[SilkSerif]  text-[3.1vw] text-white -left-[11vw] top-[1.8vw] z-10">01</span>
+        <div id="hero1" class="hero items-center flex relative overflow-hidden h-fit w-full">
+          <h1
+            class="text-[7.5vw] max-sm:text-[10vw] max-sm:tracking-tighter relative uppercase leading-none font-semibold max-sm:font-bold tracking-wide">
+            We Design
+          </h1>
+        </div>
+      </div>
+      <div id="hero2" class="hero relative w-[70%] overflow-hidden h-fit ml-[28%]  max-sm:ml-[5vw]">
+        <h1
+          class="text-[7.5vw] max-sm:text-[10vw] max-sm:tracking-tighter uppercase leading-none font-semibold tracking-wide max-sm:font-bold">
           Unique
         </h1>
       </div>
       <div id="hero3"
-        class="hero relative w-[70%] overflow-hidden h-fit ml-[28%] flex items-center justify-start gap-[1vw]">
-        <h1 class="text-[7.5vw] uppercase leading-none font-semibold tracking-tigher">
+        class="hero z-[999] relative w-[70%] overflow-hidden h-fit ml-[28%] flex items-center justify-start gap-[1vw] max-sm:ml-[5vw] max-sm:gap-0">
+        <h1
+          class="text-[7.5vw] uppercase leading-none font-semibold tracking-tigher max-sm:font-bold max-sm:tracking-tighter max-sm:text-[10vw] ">
           Web
         </h1>
-        <h1 class="text-[7.5vw] uppercase leading-none font-semibold tracking-tigher">
+        <h1
+          class="text-[7.5vw] uppercase leading-none font-semibold tracking-tigher max-sm:font-bold max-sm:tracking-tighter max-sm:text-[10vw]">
           /
         </h1>
-        <h1 class="text-[7.5vw] uppercase leading-none font-semibold tracking-tighter">
-          Graphics
+        <h1
+          class="text-[7.5vw] uppercase leading-none font-semibold tracking-tighter max-sm:font-bold max-sm:tracking-tighter max-sm:text-[10vw] ">
+          Graphic
         </h1>
       </div>
-      <div id="hero4" class="hero relative w-[70%] overflow-hidden h-fit ml-[28%]">
-        <h1 class="text-[7.5vw] uppercase leading-none font-semibold tracking-wide">
+      <div id="hero4" class="hero relative w-[70%] overflow-hidden h-fit ml-[28%] max-sm:ml-[5vw]">
+        <h1
+          class="text-[7.5vw] uppercase leading-none font-semibold tracking-wide max-sm:font-bold max-sm:text-[10vw] max-sm:tracking-tighter">
           Experience
         </h1>
       </div>
+      <img
+        class="flag pointer-events-none opacity-0 h-[25vw] absolute top-0 left-0 transform -translate-x-1/2 -translate-y-1/2"
+        src="Images/Flag.jpg" alt="">
+
     </div>
-    <div class="page2 bg-[#151515] h-screen w-full relative py-[5vh]  mt-[6vh]" data-scroll data-scroll-speed="-1.4" >
-      <div class="video-con h-[65vh] w-[70vw] relative left-[27%] bg-[Images/vidImage.jpg]">
+    <div class="page2  h-screen w-full relative pt-[5vh] mt-[6vh] max-sm:pt-0 max-sm:mt-0 max-sm:h-[50vh]" data-scroll
+      data-scroll-speed="-1.5">
+      <div
+        class="video-con  h-[65vh] w-[70vw] max-sm:w-full  max-sm:left-0 max-sm:h-[40vh] relative bg-red-300 left-[27%]">
         <div
-          class="video-cursor flex items-center justify-center -top-[15%] left-[75%] bg-[#ffa53d] w-[10vw] h-[10vw] rounded-full absolute z-[999]">
-          <svg class="w-[2vw] h-[2vw]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+          class="video-cursor pointer-events-none  flex items-center justify-center -top-[12.5%] left-[75%] bg-[#ffa53d] w-[10vw] h-[10vw] rounded-full absolute z-[999] max-sm:top-[35%] max-sm:left-[38%]  max-sm:w-[23vw] max-sm:h-[23vw]">
+          <svg class="w-[2vw] h-[2vw]   max-sm:w-[4vw] max-sm:h-[4vw] " xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24" fill="white">
             <path
               d="M6 20.1957V3.80421C6 3.01878 6.86395 2.53993 7.53 2.95621L20.6432 11.152C21.2699 11.5436 21.2699 12.4563 20.6432 12.848L7.53 21.0437C6.86395 21.46 6 20.9812 6 20.1957Z">
             </path>
           </svg>
         </div>
-        <img class="absolute top-0 h-full w-full object-cover z-10" src="Images/vidImage.jpg" alt="" />
-        <video class="absolute top-0 h-full w-full object-cover z-0" muted autoplay loop
+        <img class="absolute top-0 h-full w-full object-cover z-10 max-sm:object-cover" src="Images/vidImage.jpg"
+          alt="" />
+        <video class="absolute top-0 h-full w-full object-cover z-0 max-sm:object-cover" loop
           src="VIdeo/Obys-Showreel-2024.mp4"></video>
       </div>
     </div>
-    <div class="page3 relative min-h-screen w-full bg-black" data-scroll data-scroll-speed="-1.5"></div>
-    <div class="page4 min-h-screen relative w-full py-[7vh]" data-scroll>
-      <div class="page4content w-[72%]  ml-[28%] relative">
-        <h1 class="uppercase relative text-left text-[7vw] font-plain before:content-['03'] before:absolute before:font-[SilkSerif] before:font-[100] before:text-[3.1vw] before:-left-[11vw] before:top-[1.8vw]">About obys</h1>
-        <div class="underlineee w-[90%] h-[0.10vw] bg-[#fff] my-[5vw]"></div>
-        <p class="text-[2.2vw] w-[30vw] text-left mb-[4vw] tracking-normal font-medium leading-none font-plain">
+    <div class="page3 relative min-h-screen w-full px-[2vw] py-[5vh]" data-scroll data-scroll-speed="-1.5">
+      <h1 class="uppercase w-[72%] ml-[28%] max-sm:ml-0 max-sm:px-[2vw] max-sm:text-left max-sm:text-[9vw] max-sm:w-full max-sm:font-bold relative text-left text-[7vw] font-plain 
+    before:content-['02'] before:absolute before:font-[SilkSerif] before:font-[100] before:text-[3.1vw] before:-left-[11vw] before:top-[1.8vw]
+    max-sm:before:-top-[5vw] max-sm:before:left-[2.5vw] max-sm:before:text-[4.2vw]">
+        Our Projects
+      </h1>
+      <div class="underlineee ml-[28%] w-[66%] h-[0.10vw] bg-[#fff] my-[5vw] 
+  max-sm:ml-2.5 max-sm:w-[90%] max-sm:h-[1px]">
+      </div>
+      <div class="maincontainer   lg:gap-[3.5vw] lg:px-[1vw] lg:flex lg:items-start lg:justify-center">
+        <div class="imgcontainer relative flex flex-col items-start justify-start gap-[2vw] 
+             max-sm:items-start max-sm:justify-start max-sm:px-[2.5vw] max-sm:gap-[5vw]">
+
+          <h1 class="uppercase text-[3vw] font-semibold max-sm:text-[7vw] max-sm:relative">
+            OLGA PRUDKA
+          </h1>
+
+          <div class="imgdiv overflow-hidden h-[30vw] w-[23vw] shrink-0 relative 
+              max-sm:h-[60vh] max-sm:w-[90vw]">
+            <img class="img1 absolute top-0 left-0 w-full h-full object-cover object-center z-[2]"
+              src="Images/Olga_Prudka_1.jpg" alt="">
+            <img class="img2 absolute top-0 left-0 w-full h-full object-cover object-center z-[0]"
+              src="Images/Olga_Prudka_2.jpg" alt="">
+          </div>
+
+          <div class="bottom w-full max-sm:w-[90vw]">
+            <div class="flex items-center justify-between text-white max-sm:text-[4vw]">
+              <h3 class="text-[1vw] max-sm:text-[3.5vw] leading-tight">
+                Logo design,<br>Website design,<br>Development
+              </h3>
+              <h6 class="text-[1vw] max-sm:text-[4vw]">2025</h6>
+            </div>
+
+            <div class="underlineee w-full h-[0.10vw] bg-[#fff] my-[2vw] 
+                max-sm:h-[1px] max-sm:mt-[4vw] max-sm:w-full">
+            </div>
+          </div>
+        </div>
+
+        <div class="imgcontainer relative flex flex-col items-start justify-start gap-[2vw] 
+            max-sm:px-[2.5vw] max-sm:gap-[5vw] max-sm:items-start">
+
+          <!-- Heading -->
+          <h1 class="uppercase text-[3vw] font-semibold max-sm:text-[7vw] max-sm:relative">
+            Aim
+          </h1>
+
+          <!-- Image -->
+          <div class="imgdiv overflow-hidden h-[40vw] w-[30vw] shrink-0 relative 
+              max-sm:h-[60vh] max-sm:w-[90vw]">
+            <img class="w-full h-full object-cover object-center" src="Images/AIM-1.jpg" alt="">
+            <img class="w-full h-full object-cover object-center" src="Images/AIM-2.jpg" alt="">
+          </div>
+
+          <!-- Bottom Info -->
+          <div class="bottom w-full max-sm:w-[90vw]">
+            <div class="flex items-center justify-between text-white max-sm:text-[4vw]">
+              <h3 class="w-[12vw] text-[1vw] max-sm:w-[60vw] max-sm:text-[3.5vw] leading-tight">
+                Logo design,<br>Website design,<br>Development
+              </h3>
+              <h6 class="text-[1vw] max-sm:text-[4vw]">2025</h6>
+            </div>
+
+            <!-- Line -->
+            <div class="underlineee w-full h-[0.10vw] bg-[#fff] my-[2vw] 
+                max-sm:h-[1px] max-sm:mt-[4vw] max-sm:w-full">
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="page3circle max-sm:hidden overflow-hidden relative flex items-center justify-center h-[23vw] w-[23vw] border-[#878787] border-2 rounded-full mt-[60vh] ml-[10vw]">
+          <svg class="button__arrow h-[35%]" viewBox="0 0 91 118" fill="none">
+            <path
+              d="M15.2307 57.4152L15.9378 56.708L15.2307 56.0009L14.5236 56.708L15.2307 57.4152ZM34.9813 77.1658L34.2742 77.8729L35.9813 79.58L35.9813 77.1658L34.9813 77.1658ZM0.151478 72.4944L-0.555622 71.7873L-1.26273 72.4944L-0.555622 73.2015L0.151478 72.4944ZM45.29 117.633L44.5828 118.34L45.29 119.047L45.9971 118.34L45.29 117.633ZM60.3692 102.554L61.0763 103.261L61.7839 102.553L61.0758 101.846L60.3692 102.554ZM60.3685 102.553L59.6614 101.846L58.9538 102.553L59.6619 103.261L60.3685 102.553ZM90.427 72.4944L91.1341 73.2015L91.8412 72.4944L91.1341 71.7873L90.427 72.4944ZM75.3478 57.4152L76.0549 56.7081L75.3478 56.001L74.6407 56.7081L75.3478 57.4152ZM56.3065 76.4565L55.3065 76.4565L55.3065 78.8707L57.0136 77.1636L56.3065 76.4565ZM56.3065 0.120074L57.3065 0.120074L57.3065 -0.879926L56.3065 -0.879926L56.3065 0.120074ZM34.9813 0.120076L34.9813 -0.879924L33.9813 -0.879924L33.9813 0.120076L34.9813 0.120076ZM14.5236 58.1223L34.2742 77.8729L35.6884 76.4587L15.9378 56.708L14.5236 58.1223ZM0.858585 73.2015L15.9378 58.1223L14.5236 56.708L-0.555622 71.7873L0.858585 73.2015ZM45.9971 116.926L0.858585 71.7873L-0.555622 73.2015L44.5828 118.34L45.9971 116.926ZM59.662 101.846L44.5828 116.926L45.9971 118.34L61.0763 103.261L59.662 101.846ZM59.6619 103.261L59.6625 103.261L61.0758 101.846L61.0751 101.845L59.6619 103.261ZM61.0756 103.26L91.1341 73.2015L89.7199 71.7873L59.6614 101.846L61.0756 103.26ZM91.1341 71.7873L76.0549 56.7081L74.6407 58.1223L89.7199 73.2015L91.1341 71.7873ZM74.6407 56.7081L55.5994 75.7494L57.0136 77.1636L76.0549 58.1223L74.6407 56.7081ZM57.3065 76.4565L57.3065 0.120074L55.3065 0.120074L55.3065 76.4565L57.3065 76.4565ZM56.3065 -0.879926L34.9813 -0.879924L34.9813 1.12008L56.3065 1.12007L56.3065 -0.879926ZM33.9813 0.120076L33.9813 77.1658L35.9813 77.1658L35.9813 0.120076L33.9813 0.120076Z"
+              fill="currentColor"></path>
+          </svg>
+          <div
+            class="circletext rounded-full h-full w-full absolute flex items-center justify-center bg-white left-0 top-0">
+            <p class="text-[0.9vw] font-plain w-[75%] font-semibold text-black">We are thrilled to have you on board.We
+              hope you enjoy the projects❤️</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="maincontainer lg:flex lg:items-start lg:justify-end lg:gap-[4.5vw] lg:px-[1vw]">
+        <div
+          class="page3circle max-sm:hidden overflow-hidden relative flex items-center justify-center h-[23vw] w-[23vw] border-[#878787] border-2 rounded-full -mt-[2vw]">
+          <svg class="button__arrow h-[35%] -rotate-[45deg]" viewBox="0 0 91 118" fill="none">
+            <path
+              d="M15.2307 57.4152L15.9378 56.708L15.2307 56.0009L14.5236 56.708L15.2307 57.4152ZM34.9813 77.1658L34.2742 77.8729L35.9813 79.58L35.9813 77.1658L34.9813 77.1658ZM0.151478 72.4944L-0.555622 71.7873L-1.26273 72.4944L-0.555622 73.2015L0.151478 72.4944ZM45.29 117.633L44.5828 118.34L45.29 119.047L45.9971 118.34L45.29 117.633ZM60.3692 102.554L61.0763 103.261L61.7839 102.553L61.0758 101.846L60.3692 102.554ZM60.3685 102.553L59.6614 101.846L58.9538 102.553L59.6619 103.261L60.3685 102.553ZM90.427 72.4944L91.1341 73.2015L91.8412 72.4944L91.1341 71.7873L90.427 72.4944ZM75.3478 57.4152L76.0549 56.7081L75.3478 56.001L74.6407 56.7081L75.3478 57.4152ZM56.3065 76.4565L55.3065 76.4565L55.3065 78.8707L57.0136 77.1636L56.3065 76.4565ZM56.3065 0.120074L57.3065 0.120074L57.3065 -0.879926L56.3065 -0.879926L56.3065 0.120074ZM34.9813 0.120076L34.9813 -0.879924L33.9813 -0.879924L33.9813 0.120076L34.9813 0.120076ZM14.5236 58.1223L34.2742 77.8729L35.6884 76.4587L15.9378 56.708L14.5236 58.1223ZM0.858585 73.2015L15.9378 58.1223L14.5236 56.708L-0.555622 71.7873L0.858585 73.2015ZM45.9971 116.926L0.858585 71.7873L-0.555622 73.2015L44.5828 118.34L45.9971 116.926ZM59.662 101.846L44.5828 116.926L45.9971 118.34L61.0763 103.261L59.662 101.846ZM59.6619 103.261L59.6625 103.261L61.0758 101.846L61.0751 101.845L59.6619 103.261ZM61.0756 103.26L91.1341 73.2015L89.7199 71.7873L59.6614 101.846L61.0756 103.26ZM91.1341 71.7873L76.0549 56.7081L74.6407 58.1223L89.7199 73.2015L91.1341 71.7873ZM74.6407 56.7081L55.5994 75.7494L57.0136 77.1636L76.0549 58.1223L74.6407 56.7081ZM57.3065 76.4565L57.3065 0.120074L55.3065 0.120074L55.3065 76.4565L57.3065 76.4565ZM56.3065 -0.879926L34.9813 -0.879924L34.9813 1.12008L56.3065 1.12007L56.3065 -0.879926ZM33.9813 0.120076L33.9813 77.1658L35.9813 77.1658L35.9813 0.120076L33.9813 0.120076Z"
+              fill="currentColor"></path>
+          </svg>
+          <div
+            class="circletext rounded-full h-full w-full absolute flex items-center justify-center bg-white left-0 top-0">
+            <p class="text-[1vw] font-plain font-medium text-black">It will make you WOW!🤩</p>
+          </div>
+        </div>
+        <div
+          class="imgcontainer relative flex flex-col items-start justify-start gap-[2vw] mr-[1.5vw] mt-[5.5vw] max-sm:px-[2.5vw] max-sm:gap-[5vw] max-sm:items-start max-sm:justify-start">
+
+          <!-- Title (Responsive) -->
+          <h1 class="uppercase text-[3vw] font-semibold max-sm:text-[7vw]">ochi</h1>
+
+          <!-- Image Container -->
+          <div class="imgdiv overflow-hidden h-[45vw] w-[30vw] shrink-0 relative max-sm:h-[60vh] max-sm:w-[90vw]">
+            <img class="img1 absolute top-0 left-0 w-full h-full object-cover object-center z-[2]" src="Images/OCHI.jpg"
+              alt="">
+            <img class="img2 absolute top-0 left-0 w-full h-full object-cover object-center z-[1]"
+              src="Images/OCHI_2-1.jpg" alt="">
+          </div>
+
+          <!-- Bottom Text Info -->
+          <div class="bottom w-full max-sm:w-[90vw]">
+            <div class="flex items-center justify-between max-sm:flex-col max-sm:items-start max-sm:gap-[2vw]">
+              <h3 class="w-[12vw] text-[1vw] max-sm:text-[3.5vw] max-sm:w-full">
+                Website design,<br>Development
+              </h3>
+              <h6 class="max-sm:text-[4vw]">2025</h6>
+            </div>
+
+            <!-- Underline -->
+            <div class="underlineee w-full h-[0.10vw] bg-[#fff] my-[2vw] max-sm:mt-[4vw] max-sm:w-full max-sm:h-[1px]">
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="imgcontainer relative flex flex-col items-start justify-start gap-[2vw] mr-[1.5vw] mt-[5.5vw] max-sm:px-[2.5vw] max-sm:gap-[5vw] max-sm:items-start max-sm:justify-start">
+
+          <!-- Title -->
+          <h1 class="uppercase text-[3vw] font-semibold max-sm:text-[7vw]">david laxer</h1>
+
+          <!-- Image Container -->
+          <div class="imgdiv overflow-hidden h-[40vw] w-[30vw] shrink-0 relative max-sm:h-[60vh] max-sm:w-[90vw]">
+            <img class="absolute top-0 left-0 w-full h-full object-cover object-center z-[2]" src="Images/AIM-1.jpg"
+              alt="">
+            <img class="absolute top-0 left-0 w-full h-full object-cover object-center z-[1]" src="Images/AIM-2.jpg"
+              alt="">
+          </div>
+
+          <!-- Description + Year -->
+          <div class="bottom w-full max-sm:w-[90vw]">
+            <div class="flex items-center justify-between max-sm:flex-col max-sm:items-start max-sm:gap-[2vw]">
+              <h3 class="text-[1vw] max-sm:text-[3.5vw]">Website design,<br>Development</h3>
+              <h6 class="max-sm:text-[4vw]">2025</h6>
+            </div>
+
+            <!-- Underline -->
+            <div class="underlineee w-full h-[0.10vw] bg-[#fff] my-[2vw] max-sm:mt-[4vw] max-sm:w-full max-sm:h-[1px]">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="btmcircleproject w-full flex items-center justify-center my-[8vw] ">
+        <div
+          class="pointer-events-none  bg-[#ffa53d] w-[20vw] h-[20vw] max-sm:w-[40vw] max-sm:h-[40vw] rounded-full  flex items-center justify-center font-plain text-[1.2vw] max-sm:text-[3vw]">
+          All Projects<span class="font-silk text-sm pl-1"> (18)</span>
+        </div>
+      </div>
+    </div>
+    <div class="page4 min-h-screen relative w-full lg:mt-[15vw] lg:py-[7vh] " data-scroll data-scroll-speed="-1">
+      <div class="page4content lg:w-[72%] lg:ml-[28%] lg:relative max-sm:px-[3vw]">
+        <h1
+          class="uppercase max-sm:text-[9.5vw] max-sm:w-full max-sm:font-bold  before:content-['03'] before:absolute before:font-[SilkSerif] before:font-[100] before:text-[3.1vw] before:-left-[11vw] before:top-[1.8vw]
+    max-sm:before:-top-[5vw] max-sm:before:left-[2.5vw] max-sm:before:text-[4.2vw] relative text-left text-[7vw] font-plain ">
+          About obys
+        </h1>
+        <div class="underlineee w-[90%] h-[0.10vw] bg-[#fff] my-[5vw] max-sm:w-[95%] max-sm:h-[1px]"></div>
+        <p
+          class="text-[2.2vw] w-[30vw] text-left lg:mb-[4vw] tracking-normal font-medium leading-none font-plain  max-sm:w-full max-sm:text-[7vw] max-sm:my-[10vw] ">
           Our agency is about people who love creating, designing and
           developing wow projects. In the same time we are a boutique agency
           that is more than the collective. We learn and grow, win and
           celebrate together.
         </p>
-        <div class="page4flex flex">
-          <img class="w-[48%] object-cover" src="Images/content-image01.jpg" alt="" />
-          <div class="w-[27%] ml-[2vw] font-plain">
+        <div class="page4flex flex max-sm:flex  max-sm:flex-col-reverse">
+          <img class="w-[48%] object-cover max-sm:w-[100%]" src="Images/content-image01.jpg" alt="" />
+          <div class="w-[27%] lg:ml-[2vw] font-plain max-sm:w-[60vw] max-sm:text-left max-sm:text-sm max-sm:mb-[4vw]">
             <p>
               We are happy to present our new website and updated version of
               Obys agency. As before we are open for new projects worldwide!
-              <br><br>
+              <br /><br />
               Would you like to have award winning site or unique branding
               style, please say hi to our manager —info@obys.agency. And we
               will help you with the pleasure.
             </p>
           </div>
         </div>
-        <div class="page4blue px-[2.5vw] py-[4.5vw] w-[32.5vw] relative -mt-[29.8vh] ml-[23.8vw] bg-[#3f7df4] ">
-          <div class="bluelem mb-[2vw] border-b pb-[1.6vw] flex items-start justify-between">
-            <h4 class="text-[1.8vw]">Awwwards x16</h4>
-            <p class="w-[40%] text-sm font-semibold">SOTM, SOTD and Honrable Mentions</p>
+        <div class="page4blue px-[2.5vw] py-[4.5vw] w-[32.5vw] relative -mt-[29.8vh] ml-[23.8vw] bg-[#3f7df4]
+            max-sm:w-full max-sm:ml-0 max-sm:mt-1 max-sm:px-[6vw] max-sm:py-[6vw] max-sm:h-[50vh]">
+
+          <div class="bluelem max-sm:mb-[10vw] mb-[2vw] border-b pb-[1.6vw] 
+              flex items-start justify-between 
+              max-sm:flex max-sm:justify-between max-sm:items-center max-sm:gap-[2vw]">
+            <h4 class="text-[1.8vw] max-sm:text-[4.5vw]">Awwwards x16</h4>
+            <p class="w-[40%] text-sm font-semibold  max-sm:text-[3.5vw]">
+              SOTM, SOTD and Honrable Mentions
+            </p>
           </div>
-          <div class="bluelem mb-[2vw] border-b pb-[1.6vw] flex items-center justify-between">
-            <h4 class="text-[1.8vw]">Red Dot Award x1</h4>
-            <p class="w-[40%] text-sm font-semibold">Best of the Best</p>
+
+          <div class="bluelem max-sm:mb-[10vw] mb-[2vw] border-b pb-[1.6vw] 
+              flex items-start justify-between 
+              max-sm:flex max-sm:justify-between max-sm:items-center max-sm:gap-[2vw]">
+            <h4 class="text-[1.8vw] max-sm:text-[4.5vw]">Red Dot Award x1</h4>
+            <p class="w-[40%] text-sm lg:font-semibold   max-sm:text-[3.5vw]">Best of the Best</p>
           </div>
-          <div class="bluelem mb-[2vw] border-b pb-[1.6vw] flex items-center justify-between">
-            <h4 class="text-[1.8vw]">FWA x11</h4>
-            <p class="w-[40%] text-sm font-semibold">FWA of The Day</p>
+
+          <div class="bluelem max-sm:mb-[10vw] mb-[2vw] border-b pb-[1.6vw] 
+              flex items-start justify-between 
+              max-sm:flex max-sm:items-center max-sm:justify-between max-sm:gap-[2vw]">
+            <h4 class="text-[1.8vw] max-sm:text-[4.5vw]">FWA x11</h4>
+            <p class="w-[40%] text-sm font-semibold  max-sm:text-[3.5vw]">FWA of The Day</p>
           </div>
-          <div class="bluelem mb-[2vw] border-b pb-[1.6vw] flex items-center justify-between">
-            <h4 class="text-[1.8vw]">CSSDA x23</h4>
-            <p class="w-[40%] text-sm font-semibold">WOTM, WOTD and UI, UX, Innovation</p>
+
+          <div class="bluelem max-sm:mb-[10vw] mb-[2vw] border-b pb-[1.6vw] 
+              flex items-start justify-between 
+              max-sm:flex max-sm:items-center max-sm:justify-between max-sm:gap-[2vw]">
+            <h4 class="text-[1.8vw] max-sm:text-[4.5vw]">CSSDA x23</h4>
+            <p class="w-[40%] text-sm font-semibold  max-sm:text-[3.5vw]">
+              WOTM, WOTD and UI, UX, Innovation
+            </p>
           </div>
-          <div class="bluelem mb-[2vw] border-b pb-[1.6vw] flex items-center justify-between ">
-            <h4 class="text-[1.8vw]">Behance x25</h4>
-            <p class="w-[40%] text-sm font-semibold">Interaction, Graphic Design</p>
+
+          <div class="bluelem max-sm:mb-[10vw] mb-[2vw] border-b pb-[1.6vw] 
+              flex items-start justify-between 
+              max-sm:flex max-sm:items-center max-sm:justify-between max-sm:gap-[2vw]">
+            <h4 class="text-[1.8vw] max-sm:text-[4.5vw]">Behance x25</h4>
+            <p class="w-[40%] text-sm font-semibold  max-sm:text-[3.5vw]">
+              Interaction, Graphic Design
+            </p>
           </div>
         </div>
-        <div class="underlineee w-[90%] h-[0.10vw] bg-[#fff] my-[5vw] "></div>
+
+        <div class="underlineee w-[90%] h-[0.10vw] bg-[#fff] my-[5vw] max-sm:my-[10vw]"></div>
         <div class="-mt-[3vw]">We Work with</div>
       </div>
     </div>
-    <div class="page5 min-h-screen w-full"  data-scroll>
-      <div class="elem">
+    <div class="page5 h-screen w-full mt-[2vw] max-sm:mt-[10vw] max-sm:h-[40vh]" data-scroll>
+      <div class="elem max-sm:leading-relaxed max-sm:mt-[2vw]">
         <div class="marquee">
-          <h1><span class="italic font-silk text-transparent">Sport</span> - Technology - <span
-              class="italic font-silk text-transparent">Fashion</span> - Technology -</h1>
-          <h1><span class="italic font-silk text-transparent">Sport</span> - Technology - <span
-              class="italic font-silk text-transparent">Fashion</span> - Technology -</h1>
-          <h1><span class="italic font-silk text-transparent">Sport</span> - Technology - <span
-              class="italic font-silk text-transparent">Fashion</span> - Technology -</h1>
-          <h1><span class="italic font-silk text-transparent">Sport</span> - Technology - <span
-              class="italic font-silk text-transparent">Fashion</span> - Technology -</h1>
+          <h1>
+            <span class="italic font-silk text-transparent">Sport</span> -
+            Technology -
+            <span class="italic font-silk text-transparent">Fashion</span> -
+            Technology -
+          </h1>
+          <h1>
+            <span class="italic font-silk text-transparent">Sport</span> -
+            Technology -
+            <span class="italic font-silk text-transparent">Fashion</span> -
+            Technology -
+          </h1>
+          <h1>
+            <span class="italic font-silk text-transparent">Sport</span> -
+            Technology -
+            <span class="italic font-silk text-transparent">Fashion</span> -
+            Technology -
+          </h1>
+          <h1>
+            <span class="italic font-silk text-transparent">Sport</span> -
+            Technology -
+            <span class="italic font-silk text-transparent">Fashion</span> -
+            Technology -
+          </h1>
         </div>
       </div>
-      <div class="elem2">
+      <div class="elem2 max-sm:leading-relaxed max-sm:mt-[2vw]">
         <div class="marquee2">
-          <h1><span class="italic font-silk text-transparent">Beauty</span> - Real Estate - Architecture -</h1>
-          <h1><span class="italic font-silk text-transparent">Beauty</span> - Real Estate - Architecture -</h1>
-          <h1><span class="italic font-silk text-transparent">Beauty</span> - Real Estate - Architecture -</h1>
-          <h1><span class="italic font-silk text-transparent">Beauty</span> - Real Estate - Architecture -</h1>
+          <h1>
+            <span class="italic font-silk text-transparent">Beauty</span> -
+            Real Estate - Architecture -
+          </h1>
+          <h1>
+            <span class="italic font-silk text-transparent">Beauty</span> -
+            Real Estate - Architecture -
+          </h1>
+          <h1>
+            <span class="italic font-silk text-transparent">Beauty</span> -
+            Real Estate - Architecture -
+          </h1>
+          <h1>
+            <span class="italic font-silk text-transparent">Beauty</span> -
+            Real Estate - Architecture -
+          </h1>
         </div>
       </div>
-      <div class="elem">
+      <div class="elem max-sm:leading-relaxed max-sm:mt-[2vw]">
         <div class="marquee">
-          <h1><span class="italic font-silk text-transparent">Science</span> - Travel - Partners -</h1>
-          <h1><span class="italic font-silk text-transparent">Science</span> - Travel - Partners -</h1>
-          <h1><span class="italic font-silk text-transparent">Science</span> - Travel - Partners -</h1>
-          <h1><span class="italic font-silk text-transparent">Science</span> - Travel - Partners -</h1>
+          <h1>
+            <span class="italic font-silk text-transparent">Science</span> -
+            Travel - Partners -
+          </h1>
+          <h1>
+            <span class="italic font-silk text-transparent">Science</span> -
+            Travel - Partners -
+          </h1>
+          <h1>
+            <span class="italic font-silk text-transparent">Science</span> -
+            Travel - Partners -
+          </h1>
+          <h1>
+            <span class="italic font-silk text-transparent">Science</span> -
+            Travel - Partners -
+          </h1>
         </div>
       </div>
-      <div class="elem2">
+      <div class="elem2 max-sm:leading-relaxed max-sm:mt-[2vw]">
         <div class="marquee2">
-          <h1><span class="italic font-silk text-transparent">Music</span> - Automotive - Hotels -</h1>
-          <h1><span class="italic font-silk text-transparent">Music</span> - Automotive - Hotels -</h1>
-          <h1><span class="italic font-silk text-transparent">Music</span> - Automotive - Hotels -</h1>
-          <h1><span class="italic font-silk text-transparent">Music</span> - Automotive - Hotels -</h1>
+          <h1>
+            <span class="italic font-silk text-transparent">Music</span> -
+            Automotive - Hotels -
+          </h1>
+          <h1>
+            <span class="italic font-silk text-transparent">Music</span> -
+            Automotive - Hotels -
+          </h1>
+          <h1>
+            <span class="italic font-silk text-transparent">Music</span> -
+            Automotive - Hotels -
+          </h1>
+          <h1>
+            <span class="italic font-silk text-transparent">Music</span> -
+            Automotive - Hotels -
+          </h1>
         </div>
       </div>
     </div>
-    <div class="footer h-screen relative w-full pl-[28vw]" data-scroll>
-        <h1 class="uppercase before:content-['04'] before:absolute before:font-[SilkSerif] before:font-[100] before:text-[3.1vw] before:-left-[11vw] before:top-[1.8vw] relative text-left text-[7.2vw] font-plain font-semibold">Let's Crete</h1>
-        <div class="underlineee w-[90%] h-[0.10vw] bg-[#fff] my-[3.5vw]"></div>
-      <div class="footerCont pr-[15vw] py-[4vw] flex items-start justify-between">
-        <div class="box">
-          <h6 class="text-[1.1vw] font-semibold">Socials</h6>
+    <div class="footer h-screen relative w-full lg:pl-[28vw] max-sm:pl-0 max-sm:h-[80vh]" data-scroll>
+      <div class="h1container  relative  w-full flex items-center">
+        <span class="first1 absolute font-[SilkSerif]  text-[3.1vw] text-white -left-[11vw] top-[1.8vw] z-10  max-sm:left-0 max-sm:mx-3 max-sm:-top-[6.5vw] max-sm:text-[4.5vw]">04</span>
+        <h1 class="texth1 inline-block uppercase relative text-left leading-[0.8] text-[7vw] font-plain font-[800] max-sm:px-[2vw] max-sm:text-left max-sm:text-[9vw] max-sm:w-full max-sm:font-bold">
+          Let's Crete
+        </h1>
+        <svg class="h1arrow lg:w-[10vw] lg:h-[10vw] max-sm:mr-[30vw] max-sm:w-[20vw]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+          stroke="white" stroke-width="0.2">
+          <path
+            d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z">
+          </path>
+        </svg>
+      </div>
+      <div class="underlineee w-[90%] h-[0.10vw] bg-[#fff] my-[3.5vw]  max-sm:ml-3 max-sm:w-[90%] max-sm:h-[1px]"></div>
+      <div class="footerCont pr-[15vw] py-[8vw] flex items-start justify-between max-sm:px-[3vw] max-sm:flex max-sm:flex-col max-sm:items-start max-sm:justify-between">
+        <div class="box max-sm:my-[5vw]">
+          <h6 class="text-[1.1vw] font-semibold max-sm:text-[4vw]">Socials</h6>
           <div class="links flex leading-tight flex-col mt-[2vw]">
-            <a class="text-[2vw]" href="">Dribbble</a>
-            <a class="text-[2vw]" href="">Instagram</a>
-            <a class="text-[2vw]" href="">Facebook</a>
-            <a class="text-[2vw]" href="">Twitter</a>
-            <a class="text-[2vw]" href="">Youtube</a>
+            <a class="text-[2vw] max-sm:text-[5.2vw]" href="">Dribbble</a>
+            <a class="text-[2vw] max-sm:text-[5.2vw]" href="">Instagram</a>
+            <a class="text-[2vw] max-sm:text-[5.2vw]" href="">Facebook</a>
+            <a class="text-[2vw] max-sm:text-[5.2vw]" href="">Twitter</a>
+            <a class="text-[2vw] max-sm:text-[5.2vw]" href="">Youtube</a>
           </div>
         </div>
-        <div class="box ">
-          <h6 class="text-[1.1vw] font-semibold">Address</h6>
-          <p class="text-[1.6vw] my-[1.8vw] w-[17vw] leading-none">Originally from Kharkiv,
-            working globally</p>
-          </div>
-          <div class="box">
-            <h6 class="text-[1.1vw] mb-[1.2vw] font-semibold">Say Hi!</h6>
-            <a  class="underline text-[2vw]">info@obys.agency</a>
-          </div>  
+        <div class="box max-sm:my-[5vw]">
+          <h6 class="text-[1.1vw] font-semibold max-sm:text-[4vw]">Address</h6>
+          <p class="text-[1.6vw] my-[1.8vw] w-[17vw] lg:leading-none max-sm:text-[5vw] max-sm:w-[70vw] max-sm:my-[2vw]">
+            Originally from Kharkiv, working globally
+          </p>
         </div>
-        <div class="underlineee w-[90%] h-[0.10vw] bg-[#fff] my-[2.5vw]"></div>
-        <h3 class="font-[500] font-plain">Obys Agency©2025</h3>
-  </div>
-    </main>
-    
+        <div class="box">
+          <h6 class="text-[1.1vw] mb-[1.2vw] font-semibold max-sm:text-[4vw]">Say Hi!</h6>
+          <a class="underline text-[2vw] max-sm:text-[6vw]">info@obys.agency</a>
+        </div>
+      </div>
+      <div class="underlineee w-[90%] h-[0.10vw] bg-[#fff] my-[2.5vw] max-sm:ml-3 max-sm:w-[90%] max-sm:h-[1px] max-sm:mt-[10vw]"></div>
+      <h3 class="font-[500] font-plain max-sm:px-[3vw] max-sm:py-[5vw]">Obys Agency©2025</h3>
+    </div>
+  </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
     integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
     integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
-<script  type="text/javascript"  src="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.js"></script>
+  <script type="text/javascript" src="https://unpkg.com/sheryjs/dist/Shery.js"></script> <!-- Recommended -->
+  <script src="https://unpkg.com/split-type"></script>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+
+  <!-- lettering.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js"
+    integrity="sha512-VJ/iYbiu1eJ6yLimfTi65t2R9TFcG5D9X8ZCfbbEFhTfPnKJh8byoKXEawi5ScJZBYL1eiirL1+MczZDx0Tz9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- textillate.js -->
+  <script src="https://cdn.jsdelivr.net/npm/textillate@0.4.1/jquery.textillate.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
   <script src="script.js"></script>
 </body>

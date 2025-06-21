@@ -62,10 +62,10 @@ html,body{
 
 .cursor{
     mix-blend-mode: difference;
-    z-index: 998;
+    z-index: 99;
     transform: translate(-50%,-50%);
     pointer-events: none;
-    will-change: transform;
+    will-change: transform;             
 }
 
 
@@ -161,21 +161,17 @@ html,body{
         transform: translateX(-50%);
     }
 }
-html.has-scroll-smooth {
-  overflow: hidden;
+
+
+._canvas_container{
+    z-index: 999999 !important;
+    pointer-events: none;
 }
 
-html.has-scroll-dragging {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+.circletext{
+    scale: 0;
+}
+.circletext p{
+    scale: 0;
 }
 
-.has-scroll-smooth body {
-  overflow: hidden;
-}
-
-.has-scroll-smooth [data-scroll-container] {
-  min-height: 100vh;
-}
