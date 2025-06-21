@@ -1,7 +1,9 @@
+
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     color: white;
 }
 
@@ -22,11 +24,43 @@ html,body{
 .font-plain {
   font-family: 'Plainlight';
 }
-.font-silk {
+.font-silk {    
   font-family: 'SilkSerif';
 }
 .Now{
-    animation: anime 2.5s infinite;
+    -webkit-animation: anime 2.5s infinite;
+            animation: anime 2.5s infinite;
+}
+
+@-webkit-keyframes anime {
+    0% {
+        opacity: 1;
+        font-family: Plainlight;
+        -webkit-text-stroke: 1px #fff;
+        color: #fff;
+        font-weight: 500;
+    }
+    48% {
+        opacity: 0;
+        font-family: Plainlight;
+        -webkit-text-stroke: 1px #fff;
+        color: #fff;
+        font-weight: 500;
+    }
+    50% {
+        font-family: SilkSerif;
+        -webkit-text-stroke: 1px #fff;
+        color: transparent;
+        font-weight: 500;
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        font-family: SilkSerif;
+        -webkit-text-stroke: 1px #fff;
+        color: transparent;
+        font-weight: 500;
+    }
 }
 
 @keyframes anime {
@@ -63,7 +97,9 @@ html,body{
 .cursor{
     mix-blend-mode: difference;
     z-index: 99;
-    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
     pointer-events: none;
     will-change: transform;             
 }
@@ -101,7 +137,8 @@ html,body{
 .elem .marquee{
     display: inline-block;
     white-space: nowrap;
-    animation: marquee 40s linear infinite;
+    -webkit-animation: marquee 40s linear infinite;
+            animation: marquee 40s linear infinite;
 }
 .elem h1{
     -webkit-text-stroke: 1px  #fff;
@@ -111,17 +148,32 @@ html,body{
     color: transparent;
     display: inline-block; 
     margin-left: 1vw;
-    animation: none;
+    -webkit-animation: none;
+            animation: none;
     
+}
+
+
+@-webkit-keyframes marquee {
+    0%{
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+    }
+    100%{
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+    }
 }
 
 
 @keyframes marquee {
     0%{
-        transform: translateX(0);
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
     }
     100%{
-        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
     }
 }
 
@@ -138,7 +190,8 @@ html,body{
 .elem2 .marquee2{
     display: inline-block;
     white-space: nowrap;
-    animation: marquee2 40s linear infinite;
+    -webkit-animation: marquee2 40s linear infinite;
+            animation: marquee2 40s linear infinite;
 }
 .elem2 h1{
     -webkit-text-stroke: 1px  #fff;
@@ -148,17 +201,32 @@ html,body{
     color: transparent;
     display: inline-block; 
     margin-left: 1vw;
-    animation: none;
+    -webkit-animation: none;
+            animation: none;
   
+}
+
+
+@-webkit-keyframes marquee2 {
+    100%{
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
+    }
+    0%{
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+    }
 }
 
 
 @keyframes marquee2 {
     100%{
-        transform: translateX(0);
+        -webkit-transform: translateX(0);
+                transform: translateX(0);
     }
     0%{
-        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
     }
 }
 
@@ -174,4 +242,3 @@ html,body{
 .circletext p{
     scale: 0;
 }
-
